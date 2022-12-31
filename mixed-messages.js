@@ -66,9 +66,20 @@ const getMonthMessage = () => {
     }
 }
 
-// const getQuote = () =>{
-
-// }
+const getQuote = () =>{
+    number= Math.floor(Math.random()*5);
+    if (number === 1){
+        return "When you have a dream, you've got to grab it and never let go. — Carol Burnett"
+    }if (number === 2){
+        return "Nothing is impossible. The word itself says 'I'm possible! — Audrey Hepburn"
+    } if (number === 3) {
+        return "The bad news is time flies. The good news is you're the pilot. — Michael Altshuler"
+    } if (number === 4){
+        return "Life has got all those twists and turns. You've got to hold on tight and off you go. — Nicole Kidman"
+    } if (number === 5) {
+        return "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you. — Ralph Waldo Emerson"
+    }
+}
 
 
 
