@@ -6,7 +6,7 @@
 
 
 
-const getSun= (day, month) => {
+var getSun= (function (day, month) {
     if ( month === 'March' && day >=21 || month === 'April' && day <= 19){
         return "Aries"
     }else if ( month === 'April' && day >=20||month === 'May' && day <= 20 ){
@@ -33,36 +33,36 @@ const getSun= (day, month) => {
         return "Taurus"
     }
 
-}
+})(24, 'September');
 
 
 const getMonthMessage = () => {
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'july', 'August', 'September', 'November', 'December']
     randMonth= Math.floor(Math.random() * months.length);
     if (randMonth === 0){
-        return 'January will be full of new adventures ' + getSun
+        console.log ('January will be full of new adventures ' + getSun)
     }if (randMonth === 1){
-        return 'February is all about creating systems that set you up for sucess ' + getSun
+        console.log ('February is all about creating systems that set you up for sucess ' + getSun)
     }if (randMonth === 2){
-        return 'March means tuning into your intuition ' + getSun
+        console.log( 'March means tuning into your intuition ' + getSun)
     }if (randMonth === 3){
-        return 'April means charging forward towards your goals. Do not hold back ' + getSun
+        console.log ('April means charging forward towards your goals. Do not hold back ' + getSun)
     }if (randMonth === 4){
-        return 'When May comes, take some time to smell the roses ' + getSun
+        console.log ('When May comes, take some time to smell the roses ' + getSun)
     }if (randMonth === 5){
-        return 'June will be a time of celebration.  Connect with good friends and make memories ' + getSun
+        console.log ('June will be a time of celebration.  Connect with good friends and make memories ' + getSun)
     } if (randMonth === 6){
-        return 'With the sunshine of July comes natures abundance, soak in every blessing that comes your way ' + getSun
+        console.log ('With the sunshine of July comes natures abundance, soak in every blessing that comes your way ' + getSun)
     }if (randMonth === 7){
-        return 'August is all about stepping into your royal robes ' + getSun + ' where are you ready to shine?'
+        console.log ('August is all about stepping into your royal robes ' + getSun + ' where are you ready to shine?')
     }if (randMonth === 8){
         return 'After a wild summer September is time to get your ducks in a row  ' + getSun + ' Plan out how you are going to complete your final 2023 goals'
     }if (randMonth === 9){
         return 'October is your month ' + getSun + ' take stock of your harvest from this past year. What are you most proud of?'
     }if (randMonth === 10){
-        return 'November will be all about gratitude and blessings' + getSun
+        console.log ('November will be all about gratitude and blessings' + getSun)
     }if (randMonth === 11){
-        return 'Savor the year past in December, and get ready for a fabulous New Year' + getSun
+        console.log ('Savor the year past in December, and get ready for a fabulous New Year' + getSun)
     }
 }
 
@@ -71,4 +71,5 @@ const getMonthMessage = () => {
 // }
 
 
-console.log (getSun(24, 'September'))
+
+getMonthMessage();
