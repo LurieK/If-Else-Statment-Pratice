@@ -35,39 +35,9 @@ var getSun= (function (day, month) {
 
 })(24, 'September');
 
-
-const getMonthMessage = () => {
-    months = ['January', 'February', 'March', 'April', 'May', 'June', 'july', 'August', 'September', 'November', 'December']
-    randMonth= Math.floor(Math.random() * months.length);
-    if (randMonth === 0){
-        console.log ('January will be full of new adventures ' + getSun)
-    }if (randMonth === 1){
-        console.log ('February is all about creating systems that set you up for sucess ' + getSun)
-    }if (randMonth === 2){
-        console.log( 'March means tuning into your intuition ' + getSun)
-    }if (randMonth === 3){
-        console.log ('April means charging forward towards your goals. Do not hold back ' + getSun)
-    }if (randMonth === 4){
-        console.log ('When May comes, take some time to smell the roses ' + getSun)
-    }if (randMonth === 5){
-        console.log ('June will be a time of celebration.  Connect with good friends and make memories ' + getSun)
-    } if (randMonth === 6){
-        console.log ('With the sunshine of July comes natures abundance, soak in every blessing that comes your way ' + getSun)
-    }if (randMonth === 7){
-        console.log ('August is all about stepping into your royal robes ' + getSun + ' where are you ready to shine?')
-    }if (randMonth === 8){
-        return 'After a wild summer September is time to get your ducks in a row  ' + getSun + ' Plan out how you are going to complete your final 2023 goals'
-    }if (randMonth === 9){
-        return 'October is your month ' + getSun + ' take stock of your harvest from this past year. What are you most proud of?'
-    }if (randMonth === 10){
-        console.log ('November will be all about gratitude and blessings' + getSun)
-    }if (randMonth === 11){
-        console.log ('Savor the year past in December, and get ready for a fabulous New Year' + getSun)
-    }
-}
-
-const getQuote = () =>{
-    number= Math.floor(Math.random()*5);
+const getQuote = () => {
+    number= Math.floor(Math.random()*5)
+    console.log (number)
     if (number === 1){
         return "When you have a dream, you've got to grab it and never let go. — Carol Burnett"
     }if (number === 2){
@@ -78,9 +48,45 @@ const getQuote = () =>{
         return "Life has got all those twists and turns. You've got to hold on tight and off you go. — Nicole Kidman"
     } if (number === 5) {
         return "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you. — Ralph Waldo Emerson"
+    } 
+        
+}
+
+
+function getMonthMessage() {
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'july', 'August', 'September', 'November', 'December'];
+    randMonth = Math.floor(Math.random() * months.length);
+    if (randMonth === 0) {
+        console.log('January will be full of new adventures ' + getSun);
+    } if (randMonth === 1) {
+        console.log('February is all about creating systems that set you up for sucess ' + getSun);
+    } if (randMonth === 2) {
+        console.log('March means tuning into your intuition ' + getSun);
+    } if (randMonth === 3) {
+        console.log('April means charging forward towards your goals. Do not hold back ' + getSun);
+    } if (randMonth === 4) {
+        console.log('When May comes, take some time to smell the roses ' + getSun);
+    } if (randMonth === 5) {
+        console.log('June will be a time of celebration.  Connect with good friends and make memories ' + getSun);
+    } if (randMonth === 6) {
+        console.log('With the sunshine of July comes natures abundance, soak in every blessing that comes your way ' + getSun);
+    } if (randMonth === 7) {
+        console.log('August is all about stepping into your royal robes ' + getSun + ' where are you ready to shine?');
+    } if (randMonth === 8) {
+        return 'After a wild summer September is time to get your ducks in a row  ' + getSun + ' Plan out how you are going to complete your final 2023 goals';
+    } if (randMonth === 9) {
+        return 'October is your month ' + getSun + ' take stock of your harvest from this past year. What are you most proud of?';
+    } if (randMonth === 10) {
+        console.log('November will be all about gratitude and blessings' + getSun);
+    } if (randMonth === 11) {
+        console.log('Savor the year past in December, and get ready for a fabulous New Year' + getSun);
     }
+
 }
 
 
 
-getMonthMessage();
+
+
+// getMonthMessage();
+console.log(getQuote)
