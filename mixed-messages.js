@@ -2,7 +2,7 @@
 //get their Sun
 //generate two random messages
     //2023 prediction 
-    // advice for the year
+    // quote for the year
 
 
 
@@ -35,21 +35,23 @@ var getSun= (function (day, month) {
 
 })(24, 'September');
 
-const getQuote = () => {
-    number= Math.floor(Math.random()*5)
-    console.log (number)
-    if (number === 1){
-        return "When you have a dream, you've got to grab it and never let go. — Carol Burnett"
-    }if (number === 2){
-        return "Nothing is impossible. The word itself says 'I'm possible! — Audrey Hepburn"
+const getQuote= () => {
+
+    let number = Math.floor(Math.random() * 5);
+    if (number === 1) {
+        return "When you have a dream, you've got to grab it and never let go. — Carol Burnett";
+    } if (number === 2) {
+        return "Nothing is impossible. The word itself says 'I'm possible! — Audrey Hepburn";
     } if (number === 3) {
-        return "The bad news is time flies. The good news is you're the pilot. — Michael Altshuler"
-    } if (number === 4){
-        return "Life has got all those twists and turns. You've got to hold on tight and off you go. — Nicole Kidman"
+        return "The bad news is time flies. The good news is you're the pilot. — Michael Altshuler";
+    } if (number === 4) {
+        return "Life has got all those twists and turns. You've got to hold on tight and off you go. — Nicole Kidman";
     } if (number === 5) {
-        return "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you. — Ralph Waldo Emerson"
-    } 
-        
+        return "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you. — Ralph Waldo Emerson";
+    } if (number === 0) {
+        return "We must let go of the life we have planned, so as to accept the one that is waiting for us. --Joseph Campbell";
+    }
+
 }
 
 
@@ -88,5 +90,5 @@ function getMonthMessage() {
 
 
 
-// getMonthMessage();
-console.log(getQuote)
+getMonthMessage();
+console.log(getQuote())
