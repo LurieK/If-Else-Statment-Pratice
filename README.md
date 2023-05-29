@@ -39,6 +39,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-- [Lurie Kimmerle](https://github.com/your-github-username)
+- [Lurie Kimmerle](https://github.com/LurieK)
 
-Feel free to further customize the README file based on your specific needs and add any additional information or details that you'd like to include.
